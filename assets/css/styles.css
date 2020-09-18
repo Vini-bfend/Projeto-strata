@@ -92,11 +92,43 @@ h6{
 
 .main-header-title{
     font-size: 25px;
+    color: rgba(255, 255, 255, 0.575);
 }
 
+.main-header-title strong{
+    color: white;
+}
 .main-content {
     left: 35%;
     top: 0;
-    margin: 0 5%;
+    margin: 3%;
     position: absolute;
+}
+
+.main-content-section {
+    margin: 5% 0;
+}
+
+
+.main-content-section a {
+    display: inline-block;
+    margin: 25px 0;
+}
+
+.card-dad {
+    overflow: auto;
+}
+
+.card {
+    float: left;
+    width: 45%;
+}
+
+.card:nth-child(2n){
+    margin-left: 10%;
+}
+
+.card-img img{
+    border-radius: 5px;
+    width: 100%;
 }
