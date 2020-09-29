@@ -8,16 +8,9 @@ body {
 
 a{
     color: #49bf9d;
-    transition: .2s linear;
+    display: inline-block;
     text-decoration: none;
-    padding: 2px;
-
-}
-a:hover{
-    border-radius: 2px;
-    background-color: #49bf9d;
-    color: #fff;
-    padding: 4px;
+    margin: 25px 0;
 }
 
 p{
@@ -82,14 +75,6 @@ h6{
     margin: 200px 10px 0 0;
 }
 
-.main-header a{
-    padding: 0;
-}
-
-.main-header a:hover{
-    background-color: inherit;
-}
-
 .main-header-title{
     font-size: 25px;
     color: rgba(255, 255, 255, 0.575);
@@ -98,6 +83,7 @@ h6{
 .main-header-title strong{
     color: white;
 }
+
 .main-content {
     left: 35%;
     top: 0;
@@ -106,13 +92,12 @@ h6{
 }
 
 .main-content-section {
+    clear: both;
     margin: 5% 0;
 }
 
-
 .main-content-section a {
     display: inline-block;
-    margin: 25px 0;
 }
 
 .card-dad {
@@ -131,4 +116,57 @@ h6{
 .card-img img{
     border-radius: 5px;
     width: 100%;
+}
+
+.main-form {
+    margin-right: 2%;
+    width: 58%;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.quarenta-por100 {
+    width: 40%;
+}
+
+.cinquenta-por100 {
+    width: 49%;
+    margin-right: 1%;
+}
+
+.cinquenta-por100 label{
+    display: inline-block;
+    width: 100%;
+}
+
+.float-l {
+    float: left;
+}
+
+.float-r {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.button-default {
+    background-color: #49bf9d;
+    border: 1px solid #49bf9d;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    outline: none;
+    padding: 10px 15px;
+    transition: all .3s ease;
+}
+
+.button-default:hover {
+    background-color: #fff;
+    color: #49bf9d;
 }
