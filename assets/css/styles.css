@@ -121,6 +121,11 @@ ul, ol {
 .card {
     float: left;
     width: 45%;
+    z-index: 1;
+}
+
+.card-img {
+    position: relative;
 }
 
 .card:nth-child(2n){
@@ -130,6 +135,23 @@ ul, ol {
 .card-img img{
     border-radius: 5px;
     width: 100%;
+}
+
+.card-img::after {
+    background-color: transparent;
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:8px;
+    left:0;
+    transition: ease .3s;
+}
+
+.card-img:hover::after {
+    background-color: rgba(73, 191, 158, 0.671);
+    cursor: pointer;
 }
 
 .main-form {
