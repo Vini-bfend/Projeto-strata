@@ -195,21 +195,20 @@ ul, ol {
 }
 
 textarea {
-    min-width: 95.3%;
-    max-width: 95.3%;
-    min-height: 200px;
-    max-height: 200px;
+    resize: none;
+    height: 150px;
+    width: 95.3%;
 }
 
 input, textarea {
     background-color: #ccc;
-    border: 2px solid transparent;
+    border: 2px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 20px;
 }
 
-input:focus {
+input:focus, textarea:focus {
     border: 2px solid #49bf9d;
     outline: none;
 }
@@ -241,8 +240,8 @@ blockquote {
 }
 
 .alternate-list li:hover{
-    background-color: #bbb;
-    text-shadow: 1px 1px 1px white;
+    background-color: rgba(73, 191, 158, 0.671);
+    color: #fff;
 }
 
 .alternate-list li:last-child {
@@ -287,8 +286,12 @@ blockquote {
 }
 
 .table tbody tr:hover td{
-    background-color: #49bf9d;
+    background-color: rgba(73, 191, 158, 0.671);
     color: white;
+}
+
+.table-alternate thead, .table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
+    border: 1px solid #ddd;
 }
     
 
