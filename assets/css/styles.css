@@ -54,6 +54,12 @@ label {
     margin-top: 10px;
 }
 
+ul, ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 1.1em;
+}
+
 .inline-block {
     display: inline-block;
 }
@@ -190,8 +196,39 @@ input:focus {
 
 blockquote {
     border-left: 5px solid #efefef;
-    margin: 50px 0 50px 10px;
+    margin: 100px 0 100px 10px;
     padding: 5px 0 0 20px;
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.alternate-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alternate-list li{
+    border-bottom: 2px solid #cdcdcd;
+    box-sizing: border-box;
+    padding: 2px;
+    transition: .2s ease;
+}
+
+.alternate-list li:hover{
+    background-color: #bbb;
+    text-shadow: 1px 1px 1px white;
+}
+
+.alternate-list li:last-child {
+    border: none;
+}
+
+.icons {
+    color: #49bf9d;
+    letter-spacing: 5px;
+    font-size: 30px;
 }
 
 .button-default {
