@@ -50,42 +50,49 @@
 
       <section class="main-content-section">
 
+        <div class="steps">
+          <div class="step">1</div>
+          <div class="step">2</div>
+          <div class="step">3</div>
+          <div class="step">4</div>
+        </div>
+
         <h3>Trabalhos Recentes</h3>
 
         <div class="card-dad">
           
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/01.jpg" alt="exemplo1"></div>
+            <div class="card-img" data-text="Magna sed consequat tempus"><img src="assets/images/thumbs/01.jpg" alt="exemplo1"></div>
             <h4>Magna sed consequat tempus</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
           
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/02.jpg" alt="exemplo2"></div>
+            <div class="card-img" data-text="Ultricies lacinia interdum"><img src="assets/images/thumbs/02.jpg" alt="exemplo2"></div>
             <h4>Ultricies lacinia interdum</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
           
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/03.jpg" alt="exemplo3"></div>
+            <div class="card-img" data-text="Tortor metus commodo"><img src="assets/images/thumbs/03.jpg" alt="exemplo3"></div>
             <h4>Tortor metus commodo</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
           
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/04.jpg" alt="exemplo4"></div>
+            <div class="card-img" data-text=""><img src="assets/images/thumbs/04.jpg" alt="exemplo4"></div>
             <h4>Quam neque phasellus</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
 
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/05.jpg" alt="exemplo5"></div>
+            <div class="card-img" data-text=""><img src="assets/images/thumbs/05.jpg" alt="exemplo5"></div>
             <h4>Nunc enim commodo aliquet</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
 
           <div class="card">
-            <div class="card-img"><img src="assets/images/thumbs/06.jpg" alt="exemplo6"></div>
+            <div class="card-img" data-text=""><img src="assets/images/thumbs/06.jpg" alt="exemplo6"></div>
             <h4>Risus ornare lacinia</h4>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
           </div>
@@ -349,31 +356,35 @@
 
         <h5>Formulário</h5>
 
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
+        <div class="">
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name">
 
-        <select>
-          <option value="0"> Selecione ...</option>
-          <option value="1"> HTML</option>
-          <option value="2"> CSS</option>
-          <option value="3"> Javascript</option>
-        </select>
-
-        <label><input type="radio" value="baixa" name="prioridade"> Baixa Prioridade</label>
-        <label><input type="radio" value="media" name="prioridade"> Média Prioridade</label>
-        <label><input type="radio" value="alta" name="prioridade"> Alta Prioridade</label>
-
-        <label> <input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
-        <label> <input type="checkbox" name="human" value="1">Sou Humano</label>
-
-        <label for="msg">Mensagem:</label>
-        <textarea placeholder="digite uma mensagem" id="msg"></textarea>
-
-        <input type="submit" class="button-default button-default-big" value="Enviar">
-        <input type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          
+          <select>
+            <option value="0"> Selecione ...</option>
+            <option value="1"> HTML</option>
+            <option value="2"> CSS</option>
+            <option value="3"> Javascript</option>
+          </select>
+          
+          <label><input type="radio" value="baixa" name="prioridade"> Baixa Prioridade</label>
+          <label><input type="radio" value="media" name="prioridade"> Média Prioridade</label>
+          <label><input type="radio" value="alta" name="prioridade"> Alta Prioridade</label>
+          
+          <label> <input type="checkbox" name="copy" value="1">Envie-me uma cópia</label>
+          <label> <input type="checkbox" name="human" value="1">Sou Humano</label>
+          
+          <label for="msg">Mensagem:</label>
+          <textarea placeholder="digite uma mensagem" id="msg"></textarea>
+          
+          <button class="button-default button-default-big" value="Enviar">
+          <button type="reset" class="button-default button-default-stroke button-default-big" value="Limpar">
+        
+        </div>
 
       </section>
 
@@ -399,6 +410,7 @@
     <footer></footer>
 
   </div>
-</body>
+
+  </body>
 
 </html>

@@ -36,6 +36,7 @@ h2{
 
 h3{
     font-size: 26px;
+    text-align: center;
 }
 
 h4{
@@ -127,6 +128,7 @@ ul, ol {
 .card-img {
     position: relative;
     height: 258.94px;
+    overflow: hidden;
 }
 
 .card:nth-child(2n){
@@ -139,10 +141,13 @@ ul, ol {
 }
 
 .card-img::after {
+    align-items: center;
     background-color: transparent;
     border-radius: 5px;
     cursor: pointer;
-    content: "";
+    content: attr(data-text) " ";
+    display: flex;
+    justify-content: center;
     position: absolute;
     top:300px;
     right:0;
@@ -326,4 +331,38 @@ blockquote {
 .button-default-full {
     display: block;
     margin-bottom: 10px;
+}
+
+
+.steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.steps .step {
+    align-items: center;
+    background-color: #49bf9d;
+    color: #fff;
+    display: flex;
+    font-size: 28px;
+    font-weight: 600;
+    border-radius: 50%;
+    height: 60px;
+    position: relative;
+    width: 60px;
+    justify-content: center;
+}
+
+.steps .step:nth-child(n+2)::before {
+    border-radius: 50%;
+    color: #49bf9d;
+    content: "...";
+    letter-spacing: 10px;
+    position: absolute;
+    right: 72px;
+    top: 0;
+    bottom: 0;
 }
