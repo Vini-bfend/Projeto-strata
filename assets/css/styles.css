@@ -293,10 +293,6 @@ blockquote {
 .table-alternate thead, .table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
     border: 1px solid #ddd;
 }
-    
-
-
-
 
 .button-default {
     background-color: #49bf9d;
@@ -314,4 +310,20 @@ blockquote {
 .button-default:hover {
     background-color: #fff;
     color: #49bf9d;
+}
+
+.button-default-stroke {
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 1px #888888;
+    color: #555;
+}
+
+.button-default-small {
+    font-size: .65em;
+}
+
+.button-default-full {
+    display: block;
+    margin-bottom: 10px;
 }
